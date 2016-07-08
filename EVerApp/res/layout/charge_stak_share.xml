@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+	<include 
+	    android:id="@+id/stake_share_layout"
+	    layout="@layout/titlebar"/>
+    <ExpandableListView 
+        android:id="@+id/share_expandlist"
+        android:layout_below="@+id/stake_share_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        ></ExpandableListView>
+
+</RelativeLayout>

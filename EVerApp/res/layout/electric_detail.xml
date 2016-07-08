@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/stake_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="东川路"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/stake_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.27"
+                android:drawableLeft="@drawable/distance_location"
+                android:text="203.5米" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stake_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="上海市闵行区东川路800号"
+            android:textSize="16sp" />
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <!-- TabWidget的id属性必须为 @android:id/tabs -->
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" />
+
+                <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <include
+                        android:id="@+id/view1"
+                        layout="@layout/electric_detail_info"
+                        android:background="@color/white" />
+
+                    
+                    <LinearLayout
+                        android:id="@+id/view2"
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:layout_margin="3dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/stake1" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:layout_margin="3dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/stake2" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:layout_margin="3dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/stake1" />
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:layout_margin="3dp"
+                                android:scaleType="fitXY"
+                               />
+                            
+
+                            
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/view3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#ffffff" >
+                    </ListView>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+</LinearLayout>

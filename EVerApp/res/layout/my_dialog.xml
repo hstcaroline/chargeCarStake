@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="300dip"  
+    android:minHeight="160dip"
+    android:background="#FFFFFFFF">  
+       
+    <TextView  
+        android:id="@+id/dialog_title"  
+        android:layout_width="fill_parent"  
+        android:layout_height="40.0dip"  
+        android:gravity="center_vertical"  
+        android:paddingLeft="10.0dip"  
+        android:text="温馨提示"  
+        android:textSize="20dip"  
+        android:textStyle="bold"  
+        android:textColor="#0087CB"/>  
+       
+    <ImageView  
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent"  
+        android:background="@drawable/dialog_sparator"/>  
+       
+    <LinearLayout   
+        android:id="@+id/dialog_content"  
+        android:orientation="vertical"  
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent">  
+        <TextView  
+            android:id="@+id/dialog_message"  
+            android:layout_width="fill_parent"  
+            android:layout_height="50.0dip"  
+            android:gravity="center_vertical"  
+            android:paddingLeft="10dip"  
+            android:text="您确定撤销车桩吗？" 
+            android:numeric="decimal" 
+            android:textSize="20dip"  
+            android:textStyle="bold"  
+            android:textColor="#707070"/>  
+    </LinearLayout>  
+       
+    <LinearLayout  
+        android:orientation="horizontal"  
+        android:layout_width="fill_parent"  
+        android:layout_height="50.0dip"  
+        android:layout_alignParentTop="true"  
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_back"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="#808080"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+  
+        <Button  
+            android:id="@+id/dialog_confirm"  
+            android:layout_width="90dip"  
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="5dip"  
+            android:text="确定" 
+            android:background="#87CEEB"
+            android:textSize="16dip" 
+            android:textColor="#ffffff"  
+            android:textStyle="bold"  
+            />  
+    </LinearLayout>  
+               
+
+</LinearLayout>

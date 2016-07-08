@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stakearray">  
+        <item>特斯拉</item>  
+        <item>比亚迪秦</item>          
+        <item>雪弗兰</item>       
+    </string-array>  
+     <string-array name="elcarray">  
+        <item>交流</item>  
+        <item>直流</item>              
+    </string-array>  
+</resources>

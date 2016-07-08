@@ -1,0 +1,246 @@
+#header
+{
+	padding-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 60px;
+	padding-top: 15px;
+}
+#shortcut{
+    width: 100%;
+    height: 30px;
+    background: #F1F1F1 none repeat scroll 0% 0%;
+    line-height: 30px;
+}
+#shortcut #ttbar-login {
+    margin-right: 10px;
+}
+#shortcut li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0px;
+    background: #DDD none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+#shortcut li {
+    float: left;
+    height: 30px;
+    padding: 0px 10px;
+}
+#shortcut .style-red {
+    color: #C81623;
+}
+#shortcut #ttbar-login .link-login {
+    font-family: "verdana,微软雅黑";
+}
+#shortcut .dt {
+    float: left;
+    padding: 0px 5px;
+}
+.style-red {
+    color: #C81623;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.fr {
+    float: right;
+}
+ol, ul {
+    list-style: outside none none;
+}
+#logo
+{
+	width: 330px;
+	float: left;
+}
+#logo A:link B
+{
+	width: 100px;
+	height: 38px;
+	top: 12px;
+	cursor: pointer;
+	left: 168px;
+}
+#nav
+{
+	z-index: 6;
+	position: relative;
+	padding-left: 190px;
+	margin-bottom: 10px;
+	background: #1a98fe;
+	height: 40px;
+}
+#navitems
+{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a98fe", endColorstr="#1a98fe");
+}
+#navitems
+{
+	height: 40px;
+}
+#navitems LI
+{
+	height: 40px;
+}
+#navitems LI A
+{
+	height: 40px;
+}
+#navitems LI
+{
+	position: relative;
+	width: 83px;
+	float: left;
+}
+#navitems LI A
+{
+	position: absolute;
+	text-align: center;
+	width: 85px;
+	font: 700 15px/40px "microsoft yahei"; COLOR: #fff;
+	top: 0px;
+	text-decoration: none;
+	left: 0px;
+}
+#navitems .curr
+{
+	z-index: 1;
+}
+#navitems .curr A
+{
+	background: #a40000;
+}
+
+#categorys
+{
+	position: absolute;
+	width: 180px;
+	height: 40px;
+	top: 0px;
+	left: 0px;
+}
+#categorys .mt
+{
+	background: #1a98fe;
+}
+#categorys .mt A
+{
+	line-height: 40px;
+	padding-left: 20px;
+	display: block;
+	height: 40px;
+	color: #fff;
+}
+#categorys .mt B
+{
+	width: 20px;
+	background-position: -65px 0px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+}
+#categorys .mc
+{
+	border-bottom: #e4393c 2px solid;
+	position: absolute;
+	border-left: #e4393c 2px solid;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	width: 203px;
+	padding-right: 3px;
+	display: none;
+	background: #fafafa;
+	height: 402px;
+	overflow: visible;
+	border-top: #e4393c 0px solid;
+	top: 40px;
+	border-right: #e4393c 2px solid;
+	padding-top: 3px;
+	left: 0px;
+}
+#categorys .item
+{
+	width: 200px;
+	height: 30px;
+	border-top: #fff 1px solid;
+}
+#categorys .fore1
+{
+	border-top: 0px;
+}
+#categorys SPAN
+{
+	z-index: 1;
+	position: absolute;
+	width: 203px;
+	display: block;
+}
+#categorys H3
+{
+	line-height: 28px;
+	border-right-width: 0px;
+	padding-left: 18px;
+	width: 181px;
+	background-position: -128px 8px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	height: 28px;
+	border-left-width: 0px;
+	font-weight: 400;
+}
+#categorys H3 A:link
+{
+	color: #333;
+}
+#categorys S
+{
+	position: absolute;
+	width: 6px;
+	display: block;
+	background-position: -110px -45px;
+	height: 9px;
+	top: 10px;
+	left: 185px;
+}
+#categorys .mc .extra
+{
+	display: none;
+}
+#logo A B
+{
+	display: none;
+}
+#categorys .mt
+{
+	background: 0px 50%;
+}
+#categorys .mt B
+{
+	display: none;
+}
+#categorys .mc
+{
+	display: block;
+}
+.breadcrumb
+{
+	padding-bottom: 4px;
+	line-height: 20px;
+	padding-left: 6px;
+	padding-right: 0px;
+	margin-bottom: 10px;
+	height: 20px;
+	vertical-align: baseline;
+	overflow: hidden;
+	padding-top: 0px;
+}
+.breadcrumb STRONG
+{
+	line-height: 20px;
+	display: inline;
+	font-family: "microsoft yahei"; FONT-SIZE: 18px;
+	font-weight: 700;
+}

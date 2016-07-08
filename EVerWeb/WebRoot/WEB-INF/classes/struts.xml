@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>  
+	<!-- <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" /> -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.configuration.xml.reload" value="true"/>
+	<constant name="struts.action.extension" value="action,do,,"/>
+	
+    <package name="default" namespace="/" extends="struts-default">
+		<!-- 
+		<interceptors>
+			<interceptor name="authInterceptor" class="com.interceptor.AuthInterceptor"/>
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="authInterceptor"/>
+		 		<interceptor-ref name="defaultStack"/>
+			</interceptor-stack>
+		</interceptors>
+		
+        <global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="com.exception.myException" result="error"/>
+        </global-exception-mappings>
+		 -->
+		
+		<action name="LoginAction" class="com.sjtu.ist.charge.Action.LoginAction">
+			<result name="success">/WEB-INF/User/log.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		<action name="index">
+			<result name="success">/WEB-INF/index.jsp</result>
+		</action>
+    </package>
+
+</struts>

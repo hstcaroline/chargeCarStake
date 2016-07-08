@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/share_stake_codeimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dip"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/applogo"
+        />"
+      <Button android:id="@+id/stake_share_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="分享"
+              android:textSize="16sp"
+              android:textColor="@color/white"
+              android:layout_alignParentRight="true" 
+              android:layout_marginTop="10dip"
+              android:layout_marginRight="10dip"     
+              android:background="@drawable/btn_style_green"/>
+
+     
+
+      <TextView
+          android:id="@+id/price_tag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/stake_share_btn"
+          android:text="计费单价:¥5.0每小时" />
+
+      <TextView
+          android:id="@+id/start_time_tag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/price_tag"
+          android:layout_marginTop="14dp"
+          android:text="开始时间：12:00:00" />
+ <TextView
+          android:id="@+id/end_time_tag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/start_time_tag"
+          android:layout_marginTop="14dp"
+          android:text="结束时间：17:00:00" />
+</RelativeLayout>

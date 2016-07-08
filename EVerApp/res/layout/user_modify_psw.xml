@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#eee"
+    android:gravity="center_horizontal" >
+      <include 
+        android:id="@+id/top_layout"
+        layout="@layout/titlebar"/>
+ <RelativeLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <TextView 
+            android:id="@+id/old_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="旧密码"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/old_psw_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/old_txt"
+            android:password="true"
+            />
+         </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/new_psw_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+           <TextView 
+            android:id="@+id/new_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="新密码"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/new_psw_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/new_txt"
+            android:password="true"
+            />
+            <TextView 
+            android:id="@+id/new_confirm_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            
+            android:layout_below="@+id/new_txt"
+            android:layout_marginBottom="5dp"
+            android:text="确认密码"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/new_confirm_psw_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/new_psw_edit"
+            android:layout_below="@+id/new_psw_edit"
+            android:layout_marginTop="13dp"
+            android:password="true" />
+        
+</RelativeLayout>
+    
+     <Button
+      android:id="@+id/psw_save_btn"
+      android:layout_width="50dp"
+      android:layout_height="40dp"
+      android:layout_alignBottom="@+id/top_layout"
+      android:layout_alignRight="@+id/icon_layout"
+      android:layout_margin="5dp"
+      android:text="保存"
+      android:textColor="#40E0D0"
+      android:background="#ffffff"
+       />
+ 
+</RelativeLayout>

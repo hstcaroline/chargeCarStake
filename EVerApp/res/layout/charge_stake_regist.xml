@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:id="@+id/charge_register_layout" >
+
+    <include
+        android:id="@+id/stakeregist_top_layout"
+        layout="@layout/titlebar"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent" 
+        android:layout_weight="0.1"/>
+    <!--
+          RelativeLayout
+        android:id="@+id/stakeregist_medial_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stakeregist_top_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+    -->
+
+    <LinearLayout
+        android:id="@+id/address_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_editbox" >
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/address"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/detail_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入具体地址" >
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/map_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_mark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stake_type_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_editbox" >
+
+        <TextView
+            android:id="@+id/stake_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="电桩类型"
+            android:textSize="16sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/stake_style_spn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/stake_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_editbox" >
+
+        <TextView
+            android:id="@+id/share_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="可用时间段"
+            android:textSize="16sp" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/choose_stime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="开始时间"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:text="——" />
+
+        <EditText
+            android:id="@+id/choose_etime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="结束时间"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stake_fee_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/login_editbox" >
+
+        <TextView
+            android:id="@+id/share_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="计费单价"
+            android:textSize="16sp" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/price_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入计费单价" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:text="元/小时" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/stake_regist_btn"
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_style_green"
+            android:text="注册车桩"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

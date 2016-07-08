@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name></display-name>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.charge.Servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/api/account/login.servlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.charge.Servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/api/account/logout.servlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.charge.Servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/api/account/register.servlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.charge.Servlet.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUserServlet</servlet-name>
+		<url-pattern>/api/user/update.servlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>CollectionServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.Servlet.CollectionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CollectionServlet</servlet-name>
+		<url-pattern>/api/user/collection.servlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ForgetPswServlet</servlet-name>
+		<servlet-class>com.sjtu.ist.Servlet.ForgetPswServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgetPswServlet</servlet-name>
+		<url-pattern>/api/account/forgetPsw.servlet</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>CharEncoding</filter-name>
+		<filter-class>com.sjtu.ist.charge.Filter.CharEncoding</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>AuthFilter</filter-name>
+		<filter-class>com.sjtu.ist.Filter.AuthFilter</filter-class>
+
+		<init-param>
+			<param-name>loginUrl</param-name>
+			<param-value>/api/account/login.servlet</param-value>
+		</init-param>
+		<init-param>
+			<param-name>registerUrl</param-name>
+			<param-value>/api/account/register.servlet</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forgetPswUrl</param-name>
+			<param-value>/api/account/forgetPsw.servlet</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>AuthFilter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>SystemContextFilter</filter-name>
+		<filter-class>com.sjtu.ist.charge.Filter.SystemContextFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SystemContextFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>OpenSessionInViewer</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+
+		<init-param>
+			<param-name>sessionFactoryBeanName</param-name>
+			<param-value>sessionFactory</param-value>
+		</init-param>
+		<init-param>
+			<param-name>singleSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>flushMode</param-name>
+			<param-value>AUTO</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>OpenSessionInViewer</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>admininfo.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

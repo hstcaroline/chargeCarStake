@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corner_popupwindow"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/price_txt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:drawableLeft="@drawable/icon_electricity_hint"
+            android:gravity="left"
+            android:text="计价单位暂无信息"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/collect_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/favs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/electric_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="上海交通大学1号充电桩"
+            android:textColor="#666"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/icon_lists" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/electric_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:gravity="center|left"
+            android:text="上海市闵行区东川路800号" />
+
+        <view
+            android:id="@+id/distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:drawableLeft="@drawable/distance_location"
+            android:gravity="center"
+            android:text="203.5米" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <view
+            android:id="@+id/navi_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:drawableLeft="@drawable/icon_favs_navigation"
+            android:paddingLeft="20dp"
+            android:text="导航" />
+
+        <view
+            android:id="@+id/pre_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:drawableLeft="@drawable/icon_order"
+            android:text="预约" />
+    </LinearLayout>
+
+</LinearLayout>

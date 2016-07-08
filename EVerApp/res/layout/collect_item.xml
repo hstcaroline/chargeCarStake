@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/charge_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="特斯拉1号充电桩"
+        android:textSize="16sp" />
+ "
+
+    <TextView
+        android:id="@+id/charge_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/charge_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="上海市闵行区东川路800号"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/collect_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_address"
+        android:orientation="horizontal" >
+
+        <view
+            android:id="@+id/go_to_charge_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:drawableLeft="@drawable/icon_gps_red"
+            android:paddingTop="10dp"
+            android:text="导航" />
+
+        <view
+            android:id="@+id/order_charge_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            class="com.example.everapp.DrawableCenterTextView"
+            android:drawableLeft="@drawable/center_order"
+            android:paddingTop="10dp"
+            android:text="预约" />
+    </LinearLayout>
+
+</RelativeLayout>

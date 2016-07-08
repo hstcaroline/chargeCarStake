@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.everapp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#eee"
+    >
+
+    <RelativeLayout
+        android:id="@+id/end_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_border" >
+
+        <TextView
+            android:id="@+id/pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充电界面"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/end_layout" 
+        android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:background="@color/white"
+      
+        >
+
+        <TextView
+            android:id="@+id/pay_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="充电价格:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/pay_text_title"
+            android:gravity="center_vertical"
+            android:hint="0.0"
+            android:paddingLeft="10dp"
+            android:textColor="#707070"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.example.everapp.RoundProgressBar
+            android:id="@+id/roundProgressBar1"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_below="@+id/pay_text_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android_custom:roundColor="@android:color/black"
+            android_custom:roundProgressColor="#EE0000"
+            android_custom:roundWidth="10dip"
+            android_custom:textColor="#9A32CD"
+            android_custom:textSize="18sp" />
+
+        <Button
+            android:id="@+id/end_button"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/roundProgressBar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="结束充电"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

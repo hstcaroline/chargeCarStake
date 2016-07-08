@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ModifyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB" >
+
+    <include
+        android:id="@+id/title_one"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/title_two"
+        style="@style/layout_default_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_one"
+        android:background="#EBEBEB"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/big_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="请选择分享时间" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/small_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:text="分享时间不超过24小时" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/title_two"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/item_title_style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:text="开始时间:" />
+
+        <TextView
+            android:id="@+id/modify_Stime_txt"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="13dp"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/item_title_style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:text="结束时间:" />
+
+        <TextView
+            android:id="@+id/modify_Etime_txt"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="13dp"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/item_title_style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:text="计费单价:" />
+
+        <EditText
+            android:id="@+id/modify_price_edit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:background="@drawable/edittext_bg"
+            android:numeric="decimal"
+            android:paddingTop="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commit_modify_btn"
+        android:layout_width="193dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="#FFD700"
+        android:text="保存修改" />
+
+    <Button
+        android:id="@+id/cancel_stake_btn"
+        android:layout_width="193dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/commit_modify_btn"
+        android:layout_below="@+id/commit_modify_btn"
+        android:background="#808080"
+        android:textColor="#ffffff"
+        android:layout_marginTop="18dp"
+        android:text="撤销车桩" />
+
+</RelativeLayout>

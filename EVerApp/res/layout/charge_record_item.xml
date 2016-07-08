@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/charge_item_use_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="15-11-06"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/charge_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp" 
+        android:layout_alignParentRight="true"
+        android:text="特斯拉1号充电桩"
+        android:textSize="16sp"  /> "
+
+   <TextView
+        android:id="@+id/charge_item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp" 
+        android:layout_alignParentRight="true"
+        android:text="上海市闵行区东川路800号"
+        android:textSize="14sp"/>
+   <LinearLayout
+       android:id="@+id/charge_item_btn_layout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/charge_item_address"
+       android:orientation="horizontal"
+       >
+   <TextView
+       android:id="@+id/charge_item_fee"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp" 
+       android:text="费用"
+       android:textSize="16sp" 
+       android:layout_weight="1"
+       android:drawableLeft="@drawable/icon_electricity_hint"
+       />
+   <Button
+       android:id="@+id/complain_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:text="投诉"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp" 
+       android:textSize="16sp" 
+       android:layout_weight="1"
+       android:drawableLeft="@drawable/center_message"
+       />
+   </LinearLayout>
+
+</RelativeLayout>

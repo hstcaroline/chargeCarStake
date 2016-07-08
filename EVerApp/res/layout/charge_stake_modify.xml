@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+     <include 
+	    android:id="@+id/stake_modify_layout"
+	    layout="@layout/titlebar"/>
+            <ListView 
+        android:id="@+id/modify_stakelist"
+        android:background="@color/white"
+         android:divider="@color/mistyrose"
+        android:dividerHeight="1dip" 
+        android:layout_below="@+id/stake_modify_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        />
+     
+</RelativeLayout>

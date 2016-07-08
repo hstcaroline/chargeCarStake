@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal" 
+    android:orientation="vertical" >
+     <include
+		android:id="@+id/pwnext_top_layout"
+        layout="@layout/titlebar" />
+
+<RelativeLayout 
+        android:id="@+id/login_image"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+         android:layout_marginTop="25dp"
+        android:layout_below="@+id/pwnext_top_layout">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+            android:src="@drawable/main_logo"
+            android:contentDescription="@string/app_name"
+        />
+            
+        </RelativeLayout>
+<EditText 
+	    android:id="@+id/pwnext_newpw_edit"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/login_image"
+	    android:textColor="#000"
+	    android:textSize="15sp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginRight="50dp"
+	    android:singleLine="true"
+	    android:password="true"
+	    android:background="@drawable/login_editbox"
+	    android:hint="请输入6-16位中英文密码"/>
+<EditText 
+	    android:id="@+id/pwnext_submitpw_edit"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/pwnext_newpw_edit"
+	    android:textColor="#000"
+	    android:textSize="15sp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginLeft="50dp"
+	    android:layout_marginRight="50dp"
+	    android:singleLine="true"
+	    android:password="true"
+	    android:background="@drawable/login_editbox"
+	    android:hint="确认新密码"/>
+ <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_below="@+id/pwnext_submitpw_edit"
+	    >
+
+	     <Button
+	         android:id="@+id/pwnext_submit_btn"
+	         android:layout_width="150dp"
+	         android:layout_height="40dp"
+	         android:layout_alignParentTop="true"
+	         android:layout_centerHorizontal="true"
+	         android:background="@drawable/btn_style_green"
+	         android:text="完成"
+	         android:textColor="#ffffff"
+	         android:textSize="18sp" />
+
+	</RelativeLayout>
+
+	
+</RelativeLayout>

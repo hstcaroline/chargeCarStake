@@ -1,0 +1,96 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="ivory">#FFFFF0</color> <!-- 象牙色 -->
+    <color name="lightyellow">#FFFFE0</color> <!-- 亮黄色 -->
+    <color name="yellow">#FFFF00</color> <!-- 黄色 -->
+    <color name="snow">#FFFAFA</color> <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color> <!-- 花白色 -->
+    <color name="lemonchiffon">#FFFACD</color> <!-- 柠檬绸色 -->
+    <color name="cornsilk">#FFF8DC</color> <!-- 米绸色 -->
+    <color name="seashell">#FFF5EE</color> <!-- 海贝色 -->
+    <color name="lavenderblush">#FFF0F5</color> <!-- 淡紫红 -->
+    <color name="papayawhip">#FFEFD5</color> <!-- 番木色 -->
+    <color name="blanchedalmond">#FFEBCD</color> <!-- 白杏色 -->
+    <color name="mistyrose">#FFE4E1</color> <!-- 浅玫瑰色 -->
+    <color name="bisque">#FFE4C4</color> <!-- 桔黄色 -->
+    <color name="moccasin">#FFE4B5</color> <!-- 鹿皮色 -->
+    
+    <style name="layout_full">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="layout_wrap">                                     <!-- fixed size -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="layout_horizontal" parent="layout_full">       <!-- horizontal adapt -->
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="layout_vertical" parent="layout_full">         <!-- vertical adapt -->
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="popup_style" parent="@android:style/Widget.PopupMenu">
+        <item name="android:background">#303030</item>
+    </style>
+    <style name="mypopwindow_anim_style">
+    <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+ <!-- 指定显示的动画xml -->
+
+    <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+ <!-- 指定消失的动画xml -->
+  </style>
+    <style name="big_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">#FFC125</item>
+    </style>
+    
+    <style name="small_title_style" parent="@style/big_title_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#1F1F1F</item>
+    </style>
+    
+    <style name="layout_default_style">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    <style name="item_title_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+     <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+     <color name="darkgray">#cccc</color>
+ <!-- 定义对话框样式 -->  
+    <style name="Dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowBackground">@null</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+    </style>  
+</resources>

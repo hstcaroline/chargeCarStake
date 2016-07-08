@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_cartype"
+            android:title="合适车型"/>
+        <item
+            android:id="@+id/menu_free"	
+            android:title="空闲车桩"/>
+        <item
+            android:id="@+id/menu_distance"	
+            android:title="距离远近"/>
+    </group>
+
+</menu>

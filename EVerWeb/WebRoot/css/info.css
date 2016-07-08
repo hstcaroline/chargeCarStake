@@ -1,0 +1,678 @@
+HTML
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+BODY
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+DIV
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+SPAN
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+H2
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+H5
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+A
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+EM
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+IMG
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+STRONG
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+B
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+I
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+UL
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+LI
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+FORM
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+LABEL
+{
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+UL
+{
+	list-style-type: none;
+	list-style-image: none;
+}
+:focus
+{
+	outline-style: none;
+	outline-color: invert;
+	outline-width: 0px;
+}
+IMG
+{
+	vertical-align: middle;
+}
+EM
+{
+	font-style: normal;
+}
+.fl
+{
+	float: left;
+}
+.clr
+{
+	line-height: 0;
+	display: block;
+	height: 0px;
+	clear: both;
+	font-size: 0px;
+	overflow: hidden;
+}
+.m
+{
+	zoom: 1;
+	overflow: hidden;
+}
+.mt
+{
+	zoom: 1;
+	overflow: hidden;
+}
+.mc
+{
+	zoom: 1;
+	overflow: hidden;
+}
+.m
+{
+	margin-bottom: 10px;
+}
+.mt
+{
+	cursor: default;
+}
+.form LABEL
+{
+	float: left;
+	font-size: 12px;
+}
+.form INPUT
+{
+	float: left;
+	font-size: 12px;
+}
+.form SELECT
+{
+	float: left;
+	font-size: 12px;
+}
+.form TEXTAREA
+{
+	float: left;
+	font-size: 12px;
+}
+.form .label
+{
+	float: left;
+	font-size: 12px;
+}
+.tab
+{
+	zoom: 1;
+	overflow: hidden;
+}
+.tab LI
+{
+	text-align: center;
+	float: left;
+}
+.tab A
+{
+	text-align: center;
+	float: left;
+}
+BODY
+{
+	font: 12px/150% Arial, Verdana, "����"; BACKGROUND: #fff;
+	color: #666;
+	_background-image: url(about:blank); _background-attachment: fixed;
+}
+H2
+{
+	font-size: 14px;
+}
+H5
+{
+	font-size: 12px;
+}
+A:link
+{
+	color: #666;
+	text-decoration: none;
+}
+.w
+{
+	margin: 0px auto;
+	width: 1210px;
+}
+.main
+{
+	color: #333333;
+}
+.right A:link
+{
+	color: #005ea7;
+}
+.ftx-03
+{
+	color: #999999;
+}
+.main
+{
+	margin-bottom: 10px;
+}
+.right
+{
+	width: 1030px;
+	font-family: Verdana;
+	float: right;
+}
+.right-extra
+{
+	width: 210px;
+	float: right;
+}
+.btn
+{
+	padding-right: 13px;
+	display: inline-block;
+}
+.btn S
+{
+	width: 3px;
+	float: left;
+	margin-right: 10px;
+}
+.btn
+{
+	background: url(/shop/img/buy/btn.png) no-repeat;
+}
+.btn S
+{
+	background: url(/shop/img/buy/btn.png) no-repeat;
+}
+.btn-7
+{
+	line-height: 25px;
+}
+.btn-8
+{
+	line-height: 21px;
+}
+.btn-7 S
+{
+	height: 25px;
+}
+.btn-8 S
+{
+	height: 21px;
+}
+.btn-7
+{
+	background-position: right -393px;
+}
+.btn-7 S
+{
+	background-position: 0px -367px;
+}
+.btn-8
+{
+	background-position: right -441px;
+}
+.btn-8 S
+{
+	background-position: 0px -419px;
+}
+A.btn-7:link
+{
+	color: #333333;
+}
+A.btn-8:link
+{
+	color: #333333;
+}
+A.btn-8
+{
+	color: #333333;
+}
+.right .o-mt
+{
+	border-bottom: #1a98fe 2px solid;
+	border-left: #e6e6e6 1px solid;
+	line-height: 33px;
+	margin-bottom: 10px;
+	height: 33px;
+	border-top: #e6e6e6 1px solid;
+	border-right: #e6e6e6 1px solid;
+}
+.right .o-mt H2
+{
+	padding-left: 16px;
+	float: left;
+	color: #1278cb;
+}
+.form EM
+{
+	color: #ff6600;
+	margin-right: 3px;
+}
+.text
+{
+	font-size: 12px;
+}
+.form .text
+{
+	border-bottom: #ddd 1px solid;
+	border-left: #aaa 1px solid;
+	padding-bottom: 4px;
+	margin-top: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 0px;
+	border-top: #aaa 1px solid;
+	border-right: #ddd 1px solid;
+	padding-top: 4px;
+}
+.form .area
+{
+	border-bottom: #ddd 1px solid;
+	border-left: #aaa 1px solid;
+	padding-bottom: 4px;
+	margin-top: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 0px;
+	border-top: #aaa 1px solid;
+	border-right: #ddd 1px solid;
+	padding-top: 4px;
+}
+.sele
+{
+	border-bottom: #ddd 1px solid;
+	border-left: #aaa 1px solid;
+	padding-bottom: 4px;
+	margin-top: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 0px;
+	border-top: #aaa 1px solid;
+	border-right: #ddd 1px solid;
+	padding-top: 4px;
+}
+.form .text
+{
+	width: 130px;
+	margin-right: 5px;
+}
+.form .area
+{
+	width: 300px;
+	height: 55px;
+	margin-right: 5px;
+}
+.sele
+{
+	font-size: 12px;
+	margin-right: 10px;
+}
+.right .form .item
+{
+	margin-bottom: 20px;
+}
+.right .form .label
+{
+	text-align: right;
+	color: #666666;
+}
+.right .form .label
+{
+	line-height: 25px;
+	margin-right: 8px;
+}
+.right .form LABEL
+{
+	line-height: 25px;
+	margin-right: 8px;
+}
+.right .form .radio
+{
+	margin-top: 3px;
+}
+.right .radio
+{
+	margin-top: 5px;
+	float: left;
+}
+.right .radio
+{
+	margin-top: 5px;
+	float: left;
+}
+.tab
+{
+	z-index: 2;
+	border-bottom: #ffccaa 2px solid;
+	padding-left: 5px;
+}
+.tab LI
+{
+	position: relative;
+	text-align: center;
+	padding-bottom: 0px;
+	line-height: 29px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: url(i/tab.gif) 0px -28px;
+	float: left;
+	height: 27px;
+	overflow: hidden;
+	margin-right: 3px;
+	padding-top: 0px;
+}
+.tab LI S
+{
+	position: absolute;
+	width: 3px;
+	background: url(i/tab.gif); HEIGHT: 27px;
+	top: 0px;
+}
+.tab LI B
+{
+	position: absolute;
+	width: 3px;
+	background: url(i/tab.gif); HEIGHT: 27px;
+	top: 0px;
+}
+.tab LI S
+{
+	left: 0px;
+}
+.tab LI B
+{
+	background-position: -7px 0px;
+	right: 0px;
+}
+.tab LI.curr
+{
+	background-position: 0px -85px;
+}
+.tab LI.curr S
+{
+	background-position: 0px -57px;
+}
+.tab LI.curr B
+{
+	background-position: -7px -57px;
+}
+.tab LI.curr
+{
+	color: #ff6600;
+	font-weight: bold;
+}
+.tab LI.curr A:link
+{
+	color: #ff6600;
+	font-weight: bold;
+}
+.tab LI A:link
+{
+	color: #333333;
+}
+.right .tab
+{
+	margin-bottom: 10px;
+}
+.right .i-m
+{
+	width: 600px;
+	float: left;
+	padding-top: 10px;
+}
+.right .i-m .item
+{
+	padding-bottom: 10px;
+}
+.right .item .label
+{
+	text-align: right;
+	width: 185px;
+	color: #666666;
+}
+.right .i-m .form .text
+{
+	width: 140px;
+}
+.right .i-m .form .text1
+{
+	width: 300px;
+}
+.right .i-m .form .area
+{
+	width: 308px;
+	float: none;
+	height: 65px;
+}
+.right .fl
+{
+	width: 400px;
+}
+.right .i-m H5
+{
+	border-bottom: #e6e6e6 1px solid;
+	line-height: 30px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	color: #cc0000;
+}
+.username
+{
+	float: left;
+}
+.right-extra
+{
+	width: 150px;
+	float: right;
+	padding-top: 20px;
+}
+.right-extra .m
+{
+	text-align: center;
+	width: 122px;
+}
+.headpic
+{
+	background: url(i/self.gif) repeat-y -122px 0px;
+}
+.i-pic
+{
+	padding-right: 2px;
+}
+.right-extra .m .btns
+{
+	line-height: 30px;
+}
+.right-extra .fore
+{
+	background: url(i/self.gif); HEIGHT: 10px;
+	overflow: hidden;
+}
+.right-extra .fore1
+{
+	background: url(i/self.gif) 0px -3px;
+	height: 13px;
+	overflow: hidden;
+}
+.ssub STRONG
+{
+	margin-right: 10px;
+}
+.smod
+{
+	margin-right: 10px;
+}
+.rank S
+{
+	margin: 0px 5px;
+	width: 17px;
+	display: inline-block;
+	background: url(i/rank2013.gif); HEIGHT: 17px;
+	vertical-align: middle;
+}
+.r3 S
+{
+	background-position: 0px -34px;
+}
+.item .fl .rank A
+{
+
+	color: #cc0000;
+}
+.item .fl LABEL
+{
+	margin-right: 10px;
+}
+.form .item .fl .btn-7
+{
+	color: #333333;
+}
+.form .item .fl .btn-8
+{
+	color: #333333;
+}
+DIV.prompt-06
+{
+	margin-top: 5px;
+	float: left;
+	color: #666666;
+}
+.btn-8
+{
+	margin-right: 10px;
+}
+#baseinfo .i-m .item
+{
+	padding-bottom: 20px;
+}
+#baseinfo .sele
+{
+	width: 100px;
+}
+.right .form .item
+{
+	margin-bottom: 0px;
+}
+.rank-sh
+{
+	background-image: url(i/rank-sh.png); MARGIN-TOP: 5px;
+	display: inline-block;
+	height: 15px;
+	vertical-align: middle;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.rank-sh04
+{
+	width: 17px;
+}
+ 
+

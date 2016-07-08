@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/complaint_record_layout"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/com_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaint_record_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/com_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="投诉车桩名称"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/com_stake_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/com_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/top_edittext_bg"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/reason_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/com_stake_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="投诉理由"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/com_stake_reason"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/reason_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/top_edittext_bg"
+            android:gravity="left"
+            android:hint="请清晰描述（100字以内）"
+            android:inputType="textMultiLine"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/com_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/com_commit_btn"
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:background="#BDFCC9"
+            android:text="提交投诉" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

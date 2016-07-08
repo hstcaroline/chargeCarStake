@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:color="@color/mistyrose"
+    >
+
+    <RelativeLayout
+        android:id="@+id/collect_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_border" >
+
+        <ImageButton
+            android:id="@+id/return_btn"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="#ffffffff"
+            android:src="@drawable/but_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
